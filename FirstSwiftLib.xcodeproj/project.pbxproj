@@ -10,6 +10,7 @@
 		A65DFDFC26BD5EF600D52FD8 /* FirstSwiftLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A65DFDF226BD5EF600D52FD8 /* FirstSwiftLib.framework */; };
 		A65DFE0126BD5EF600D52FD8 /* FirstSwiftLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65DFE0026BD5EF600D52FD8 /* FirstSwiftLibTests.swift */; };
 		A65DFE0326BD5EF600D52FD8 /* FirstSwiftLib.h in Headers */ = {isa = PBXBuildFile; fileRef = A65DFDF526BD5EF600D52FD8 /* FirstSwiftLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A65DFE0D26BD62FE00D52FD8 /* Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65DFE0C26BD62FE00D52FD8 /* Addition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		A65DFDFB26BD5EF600D52FD8 /* FirstSwiftLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstSwiftLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A65DFE0026BD5EF600D52FD8 /* FirstSwiftLibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSwiftLibTests.swift; sourceTree = "<group>"; };
 		A65DFE0226BD5EF600D52FD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A65DFE0C26BD62FE00D52FD8 /* Addition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Addition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				A65DFDF526BD5EF600D52FD8 /* FirstSwiftLib.h */,
 				A65DFDF626BD5EF600D52FD8 /* Info.plist */,
+				A65DFE0C26BD62FE00D52FD8 /* Addition.swift */,
 			);
 			path = FirstSwiftLib;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				TargetAttributes = {
 					A65DFDF126BD5EF600D52FD8 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 					A65DFDFA26BD5EF600D52FD8 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A65DFE0D26BD62FE00D52FD8 /* Addition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		A65DFE0726BD5EF600D52FD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -357,6 +363,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -365,6 +372,7 @@
 		A65DFE0826BD5EF600D52FD8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -389,6 +397,7 @@
 		A65DFE0A26BD5EF600D52FD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FirstSwiftLibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -406,6 +415,7 @@
 		A65DFE0B26BD5EF600D52FD8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FirstSwiftLibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
